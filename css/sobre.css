@@ -13,6 +13,10 @@
     font-weight: 500;
 }
 
+.sobre h1 > span {
+    font-family: 'Russo One';
+}
+
 .sobre p {
     margin-top: 25px;
     font-family: 'Cabin';
