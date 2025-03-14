@@ -1,0 +1,56 @@
+.sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+    gap: 0 50px;
+
+}
+
+.sobre h1 {
+    font-family: 'Russo One';
+    font-size: 2.5rem;
+    color: var(--cor-neutra);
+    font-weight: 500;
+}
+
+.sobre p {
+    margin-top: 25px;
+    font-family: 'Cabin';
+    color: var(--cor-neutra);
+    font-size: 1.5rem;
+}
+
+.sobre p > span {
+    font-weight: bold;
+    font-family: 'Cabin';
+}
+
+
+@media (max-width: 1000px) {
+    .sobre h1 {
+        font-size: 1.8rem;
+    }
+    .sobre p {
+        font-size: 1.275rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .sobre {
+        margin-top: 50px;
+        grid-template-columns: 1fr;
+    }
+    .sobre img {
+        display: block;
+        margin: 50px auto 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .sobre h1 {
+        font-size: 1.5rem;
+    }
+    .sobre p {
+        font-size: 1rem;
+    }
+}
