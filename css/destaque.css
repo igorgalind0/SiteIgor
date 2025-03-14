@@ -1,0 +1,46 @@
+.destaque {
+    margin-top: 50px;
+}
+
+.destaque ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: var(--cor-neutra);
+    font-family: 'Cabin';
+    font-size: 1rem;
+}
+
+.destaque li::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/destaque.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+@media (max-width: 950px) {
+    .destaque ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .destaque li {
+        text-align: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .destaque ul {
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+    }
+    .destaque li {
+        font-size: 0.875rem;
+    }
+}

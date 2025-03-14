@@ -89,6 +89,10 @@
         animation: slideDown 0.3s ease-out;
     }
 
+    [data-menu="list"].ativo li {
+        margin-top: 5px;
+    }
+
     .button-menu {
         margin-top: 15px;
         display: inline-block;
