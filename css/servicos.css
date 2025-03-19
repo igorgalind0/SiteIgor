@@ -55,6 +55,9 @@
 }
 
 @media (max-width: 1000px) {
+    .servicos h1 {
+        font-size: 1.8rem;
+    }
     .servicos li h1 {
         font-size: 1.5rem;
     }
@@ -72,6 +75,10 @@
 }
 
 @media (max-width: 500px) {
+    .servicos h1 {
+        font-size: 1.5rem;
+    }
+
     .servicos li h1 {
         font-size: 1.25rem;
     }

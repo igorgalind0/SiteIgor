@@ -41,7 +41,7 @@
     position: absolute;
     bottom: 5%;
     right: 5%;
-    padding: clamp(5px, 1vw, 10px) clamp(10px, 2vw, 20px);
+    padding: clamp(10px, 1vw, 10px) clamp(15px, 2vw, 20px);
     font-size: clamp(1rem, 2vw, 1.5rem);
     color: var(--cor-primaria);
     background: var(--cor-secundaria);
@@ -58,8 +58,8 @@
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
-    width: clamp(15px, 5vw, 30px);
-    height: clamp(15px, 5vw, 30px);
+    width: clamp(20px, 5vw, 30px);
+    height: clamp(20px, 5vw, 30px);
     margin-left: clamp(5px, 1vw, 10px);
 }
 
@@ -69,9 +69,20 @@
     background: var(--cor-secundaria-2);
 }
 
+@media (max-width: 1000px) {
+    .projetos h1 {
+        font-size: 1.8rem;
+    }
+}
 
 @media (max-width: 700px) {
     .lista-projetos {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .projetos h1 {
+        font-size: 1.5rem;
     }
 }
