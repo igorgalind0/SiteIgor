@@ -18,6 +18,10 @@
     align-items: center;
     margin-top: 50px;
     gap: 50px;
+    background: #263238;
+    padding: 30px 80px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .menu a {
@@ -100,6 +104,7 @@
         border-radius: 0 0 8px 8px;
         box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
         animation: slideDown 0.3s ease-out;
+        text-align: left;
     }
 
     [data-menu="list"].ativo li {
@@ -114,6 +119,11 @@
     .menu a:hover {
         color: var(--cor-secundaria);
         transition: .2s;
+    }
+
+    .menu > div > img {
+        width: 120px;
+        height: auto;
     }
 }
 
