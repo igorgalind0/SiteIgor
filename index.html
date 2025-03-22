@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
     <title>Igor G. - Desenvolvedor Web</title>
 </head>
 <body>
@@ -11,30 +12,29 @@
         <div><img src="./img/logo.svg" alt=""></div>
         <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
         <ul data-menu="list">
-            <li><a href="#">Sobre mim</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Clientes</a></li>
-            <li><a class="button-menu" href="#">Solicitar Orçamento</a></li>
+            <li><a href="#sobre">Sobre mim</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#clientes">Clientes</a></li>
+            <li><a class="button-menu" href="https://wa.me/5581991727448" target="_blank">Solicitar Orçamento</a></li>
         </ul>
     </nav>
-
     <main class="intro container">
         <div class="intro-conteudo">
             <div class="intro-textos">
-                <h1>Seu site profissional pronto para atrair clientes e <span class="marcacao">{impulsionar seu negócio!}</span></h1>
-                <p>Transforme sua presença online e conquiste mais clientes com um site rápido, estratégico e pensado para gerar resultados. <span class="marcacao">Vamos levar sua marca para o próximo nível!</span></p>
-                <a href="#">Solicitar Orçamento</a>
+                <h1 class="fadeInDown" data-anime="200">Seu site profissional pronto para atrair clientes e <span class="marcacao">{impulsionar seu negócio!}</span></h1>
+                <p class="fadeInDown" data-anime="400">Transforme sua presença online e conquiste mais clientes com um site rápido, estratégico e pensado para gerar resultados. <span class="marcacao">Vamos levar sua marca para o próximo nível!</span></p>
+                <a class="fadeInDown" href="https://wa.me/5581991727448" target="_blank" data-anime="600">Solicitar Orçamento</a>
             </div>
         </div>
         <div>
-            <img src="./img/ImgHome.svg" alt="Pessoa mexendo no computador">
+            <img class="fadeInDown" data-anime="800" src="./img/ImgHome.svg" alt="Pessoa mexendo no computador">
         </div>
     </main>
 
     <span class="more"></span>
 
-    <section class="destaque container">
+    <section class="destaque container fadeInUp" data-anime="400" data-anima="scroll">
         <ul>
             <li>Metodologias Ágeis</li>
             <li>Modelagem UML</li>
@@ -45,16 +45,16 @@
         </ul>
     </section>
 
-    <section class="sobre container">
+    <section class="sobre container" id="sobre" data-anima="scroll">
         <div class="conteudo">
-            <h1><span class="marcacao no-break">{ </span>SOBRE MIM<span class="marcacao no-break"> }</span></h1>
-            <p>Me chamo Igor Galindo, desenvolvedor web apaixonado por transformar ideias em soluções digitais eficientes. Com experiência em desenvolvimento front-end e back-end. Meu foco é ajudar empresas e profissionais a fortalecerem sua presença online, proporcionando experiências impactantes para seus clientes. <span class="marcacao"> A tecnologia é minha ferramenta, e seu sucesso é minha prioridade.</span></p>
+            <h1 class="fadeInUp" data-anime="600"><span class="marcacao no-break">{ </span>SOBRE MIM<span class="marcacao no-break"> }</span></h1>
+            <p class="fadeInUp" data-anime="800">Me chamo Igor Galindo, desenvolvedor web apaixonado por transformar ideias em soluções digitais eficientes. Com experiência em desenvolvimento front-end e back-end. Meu foco é ajudar empresas e profissionais a fortalecerem sua presença online, proporcionando experiências impactantes para seus clientes. <span class="marcacao"> A tecnologia é minha ferramenta, e seu sucesso é minha prioridade.</span></p>
         </div>
 
-        <div><img src="./img/ImagemIgor.png" alt="Foto de Igor"></div>
+        <div class="fadeInUp" data-anime="1000"><img src="./img/ImagemIgor.png" alt="Foto de Igor"></div>
     </section>
 
-    <section class="stack container">
+    <section class="stack container" data-anima="scroll">
         <ul id="image-list">
             <li><img src="./img/stack/html.svg" alt=""></li>
             <li><img src="./img/stack/css.svg" alt=""></li>
@@ -79,7 +79,7 @@
         </ul>
     </section>
 
-    <section class="servicos container">
+    <section class="servicos container" id="servicos" data-anima="scroll">
         <h1><span class="marcacao no-break">{ </span>O QUE OFERECEMOS<span class="marcacao no-break"> }</span></h1>
         <ul>
             <li>
@@ -127,7 +127,7 @@
         </ul>
     </section>
 
-    <section class="projetos container">
+    <section class="projetos container" id="projetos" data-anima="scroll">
         <h1><span class="marcacao no-break">{ </span>PROJETOS<span class="marcacao no-break"> }</span></h1>
 
         <ul class="lista-projetos">
@@ -150,7 +150,7 @@
         </ul>
     </section>
 
-    <section class="clientes container">
+    <section class="clientes container" id="clientes" data-anima="scroll">
         <h1><span class="marcacao no-break">{ </span>DEPOIMENTOS<span class="marcacao no-break"> }</span></h1>
 
         <ul class="depoimentos">
@@ -177,14 +177,14 @@
         </ul>
     </section>
 
-    <section class="chamada container">
+    <section class="chamada container" data-anima="scroll">
         <h1>VAMOS TIRAR SUA <span class="marcacao no-break">{ IDEIA DO PAPEL } </span></h1>
 
         <p>A sua jornada de crescimento começa agora! Vamos criar um site que <span class="marcacao">gere resultados de verdade. Entre em contato e dê o primeiro passo para o sucesso online.</span></p>
 
         <p>Clique no botão abaixo para fazermos um orçamento sem compromisso!</p>
 
-        <a href="#">Solicitar Orçamento</a>
+        <a href="https://wa.me/5581991727448" target="_blank">Solicitar Orçamento</a>
     </section>
 
     <footer class="bg-footer">
@@ -196,33 +196,34 @@
                 <ul class="redes">
                     <li>
                         <div><img src="./img/redes/instagram.svg" alt="Instagram"></div>
-                        <a href="#">Instagram</a>
+                        <a href="https://www.instagram.com/igorgalinddo/" target="_blank">Instagram</a>
                     </li>
                     <li>
                         <div><img src="./img/redes/linkedin.svg" alt="Linkedin"></div>
-                        <a href="#">Linkedin</a>
+                        <a href="https://www.linkedin.com/in/igor-galindo/" target="_blank">Linkedin</a>
                     </li>
                     <li>
                         <div><img src="./img/redes/tiktok.svg" alt="Tiktok"></div>
-                        <a href="#">TikTok</a>
+                        <a href="https://www.tiktok.com/@igorgalindo?_t=ZM-8utuqN4F7bB&_r=1" target="_blank">TikTok</a>
                     </li>
                     <li>
                         <div><img src="./img/redes/youtube.svg" alt="Youtube"></div>
-                        <a href="#">Youtube</a>
+                        <a href="https://www.youtube.com/channel/UCq-g12iws4QOgTn4y41iMKA" target="_blank">Youtube</a>
                     </li>
                 </ul>
     
                 <ul class="paginas">
-                    <li>Sobre mim</li>
-                    <li>Serviços</li>
-                    <li>Projetos</li>
-                    <li>Clientes</li>
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#clientes">Clientes</a></li>
                 </ul>
             </div>
 
         </div>
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="./js/simple-anime.js"></script>
+    <script type="module" src="./js/script.js"></script>
 </body>
 </html>

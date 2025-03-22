@@ -38,18 +38,24 @@
     color: var(--cor-secundaria);
 }
 
-.paginas li {
+.paginas {
+    gap: 20px;
+}
+
+.paginas li a{
+    display: inline-block;
     font-size: 1.5rem;
     color: var(--cor-neutra);
     font-family: 'Cabin';
-    margin-bottom: 20px;
     cursor: pointer;
-    transform: .2s;
     font-weight: 600;
     text-align: right;
+    margin-bottom: 20px;
+
+    transition: .2s;
 }
 
-.paginas li:hover {
+.paginas li a:hover {
     color: var(--cor-secundaria);
 }
 
@@ -76,7 +82,7 @@
         font-size: 1.275rem;
     }
 
-    .paginas li {
+    .paginas li a{
         font-size: 1.275rem;
     }
 }
@@ -98,7 +104,7 @@
         font-size: 1.2rem;
     }
 
-    .paginas li {
+    .paginas li a{
         font-size: 1.2rem;
     }
 }
@@ -109,7 +115,7 @@
         font-size: 1rem;
     }
 
-    .paginas li {
+    .paginas li a{
         font-size: 1rem;
     }
 }
