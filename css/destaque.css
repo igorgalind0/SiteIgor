@@ -1,0 +1,48 @@
+.destaque {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.destaque ul {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.destaque li {
+    font-family: 'Cabin';
+    font-weight: 500;
+    color: var(--cor-neutra);
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.destaque li::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/destaque.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 500px) {
+    .destaque li {
+        font-size: .875rem;
+    }
+    .destaque {
+        gap: 10px;
+    }
+}

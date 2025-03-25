@@ -1,0 +1,80 @@
+.chamada {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.chamada h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.chamada p {
+    font-size: 2rem;
+    color: var(--cor-neutra);
+    text-align: center;
+    margin-top: 25px;
+    font-family: 'Cabin';
+}
+
+.chamada p > span {
+    font-family: 'Cabin';
+    font-weight: bold;
+}
+
+.chamada a {
+    display: inline-block;
+    margin-top: 25px;
+    color: var(--cor-neutra);
+    background: var(--cor-secundaria);
+    padding: 16px 32px;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    font-family: 'Cabin';
+    font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+    .chamada h1 {
+        font-size: 2rem;
+    }
+    .chamada p {
+        font-size: 1.5rem;
+    }
+    .chamada a {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .chamada {
+        margin-top: 25px;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .chamada h1 {
+        font-size: 1.8rem;
+    }
+    .chamada p {
+        font-size: 1.3rem;
+    }
+    .chamada a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .chamada h1 {
+        font-size: 1.5rem;
+    }
+    .chamada p {
+        font-size: 1.1rem;
+    }
+    .chamada a {
+        font-size: 1rem;
+        padding: 14px 28px;
+    }
+}

@@ -1,0 +1,143 @@
+.clientes {
+    margin-top: 50px;
+}
+
+.clientes h1 {
+    font-size: 2.5rem;
+}
+
+.clientes ul {
+    margin: 50px 0;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.clientes ul li{
+    flex: none;
+    width: 500px;
+    height: 300px; 
+    
+    background: var(--cor-secundaria);
+    border-radius: 8px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clientes ul li img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.clientes ul li p {
+    font-size: 1.5rem;
+    font-family: 'Cabin';
+    text-align: center;
+    color: var(--cor-neutra);
+}
+
+.clientes ul li h3 {
+    font-family: 'Cabin';
+    color: var(--cor-neutra-2);
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.clientes ul {
+    margin: 50px 0;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+}
+
+.clientes ul::-webkit-scrollbar {
+    height: 15px; 
+}
+
+.clientes ul::-webkit-scrollbar-track {
+    background: var(--cor-neutra-2);
+    border-radius: 8px;
+}
+
+.clientes ul::-webkit-scrollbar-thumb {
+    background: var(--cor-secundaria);
+    border-radius: 8px;
+    transition: background 0.3s;
+    height: 6px;
+    margin-top: 4px;
+}
+
+@media (max-width: 1000px) {
+    .clientes h1 {
+        font-size: 2rem;
+    }
+    .clientes ul li {
+        width: 90%; /* Ajusta a largura para 90% da tela */
+        max-width: 450px; /* Impede que a largura ultrapasse 450px */
+        height: auto; /* Deixa a altura do item se ajustar ao conteúdo */
+    }
+    .clientes ul li p,
+    .clientes ul li h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .clientes {
+        margin-top: 30px;
+    }
+    .clientes ul {
+        gap: 15px;
+    }
+    .clientes ul li {
+        width: 90%; /* Largura ajustada para 90% */
+        max-width: 350px; /* Impede a largura de passar de 350px */
+        height: auto;
+        padding: 15px;
+    }
+    .clientes ul li img {
+        width: 70px;
+        margin-top: 20px;
+    }
+    .clientes ul li p {
+        font-size: 1.2rem;
+    }
+
+    .clientes ul li h3 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .clientes h1 {
+        font-size: 1.5rem;
+    }
+    .clientes ul {
+        gap: 10px;
+    }
+    .clientes ul li {
+        width: 100%; /* Largura total disponível */
+        max-width: 100%; /* Impede ultrapassar a largura da tela */
+        height: auto;
+        padding: 10px;
+        box-sizing: border-box; /* Para garantir que o padding não afete a largura total */
+    }
+    .clientes ul li img {
+        width: 60px;
+    }
+    .clientes ul li p,
+    .clientes ul li h3 {
+        font-size: 1rem;
+    }
+}
+

@@ -1,0 +1,88 @@
+.projetos {
+    margin-top: 50px;
+}
+
+.projetos h1 {
+    font-size: 2.5rem;
+}
+
+.lista-projetos {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    position: relative;
+}
+
+.lista-projetos li img {
+    position: relative;
+    display: block;
+}
+
+.lista-projetos li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lista-projetos li div {
+    position: relative;
+    width: 100%;
+}
+
+.lista-projetos li img {
+    display: block;
+    width: 100%;
+}
+
+.lista-projetos li a {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    padding: clamp(10px, 1vw, 10px) clamp(15px, 2vw, 20px);
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    color: var(--cor-primaria);
+    background: var(--cor-secundaria);
+    font-weight: 500;
+    border-radius: 4px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.lista-projetos li a::after {
+    content: '';
+    background-image: url("../img/projetos/olho.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: clamp(20px, 5vw, 30px);
+    height: clamp(20px, 5vw, 30px);
+    margin-left: clamp(5px, 1vw, 10px);
+}
+
+
+.lista-projetos li a:hover {
+    transition: .2s;
+    background: var(--cor-secundaria-2);
+}
+
+@media (max-width: 1000px) {
+    .projetos h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .lista-projetos {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .projetos h1 {
+        font-size: 1.5rem;
+    }
+}
