@@ -37,6 +37,11 @@
     font-weight: 600;
 }
 
+.chamada a:hover {
+    transition: .2s;
+    background: var(--cor-secundaria-2);
+}
+
 @media (max-width: 1000px) {
     .chamada h1 {
         font-size: 2rem;
